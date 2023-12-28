@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Onkar's Portfolio</title>
+        <link rel="stylesheet" href = "style.css"> 
+        <script src="https://kit.fontawesome.com/51a404e344.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <a href="#header">
+                    <img src="images/onkar logo.png" alt="logo" class="logo">
+                    </a>    
+                    <ul id = "sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">What I Do</a></li>
+                        <li><a href="projects.html" target="_blank">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Data Science Enthusiast, Web Developer <br>
+                        and UI/UX Designer</p>
+                    <h1> Hi, I'm <span>Onkar Jagtap</span> <br>
+                         Welcome To 
+                        My Portfolio </h1>
+                    <a href="images/Onkar_Jagtap_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+            </div>
+        </div>
+<!-------------------------About------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/onkar-user.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class = "para">
+                    I have a profound interest in the multifaceted domains of data science,
+                    front-end development, 
+                    and full-stack engineering. Analyzing data intricacies excites me
+                    just as much as crafting intuitive user interfaces and bringing them
+                    to life through comprehensive full-stack solutions. 
+                    The synergy between these areas fuels my passion for creating 
+                    impactful technological solutions.
+
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>  
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Achievements</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                  
+                    <ul class="ds-skills-list">
+                        <li>Machine Learning</li>
+                        <li>Node.js</li>
+                        <li>C++</li>
+                        <li>Data Analysis</li>
+                        <li>Python</li>
+                        <li>React</li>
+                        <li>Django</li>
+                        <li>UI/UX</li>
+                        <li>SQL</li>
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                        <li>AWS</li>
+                        <li>DBMS</li>
+                        <li>Tableau</li>
+                        <li>API</li>
+                        <li>Web App Development</li>
+                        <li>Natural Language Processing</li>
+                      </ul>
+                </div>
+                <div class="tab-contents" id = "education">
+                    <ul class="education-list">
+                        <li><span>2021-2024</span><br>Pursuing B.Tech. in Artificial 
+                            Intelligence and Data Science
+                            <br>Vishwakarma Institute of 
+                            Information Technology, Pune
+                            <br>CGPA: 9.31
+                            </li>
+                        
+                        <li><span>2018-2020</span><br>Rao Junior College of Science, 
+                            Pune <br>
+                            HSC: 86.15%
+                        </li>
+                        <li><span>2013-18</span><br>Sardar Dastur 
+                            Hormazdiar Co-ed High 
+                            School, Pune <br>
+                            SSC: 93.60%
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "experience">
+                    <ul class="experience-list">
+                        <li>
+                            
+                            <span><strong>PUBLICATION:</strong></span> <br>
+                            Published a research paper titled "Leveraging Predictive Analytics for 
+                            Improved Stock Market Investment Strategies" in a Scopus indexed journal at the
+                            6th International Conference on Recent Trends in Engineering and Technology at VIIT, Pune.
+                        </li>
+                        <li>
+                            <span><strong>CERTIFICATES</strong></span><br>
+                            - Introduction to Data Science <br>
+                            <strong>Infosys SpringBoard:</strong> <br>
+                            - Foundations of UX Design by Google <br>        
+                            - Software Engineering and Agile software development <br>
+                            - Basics of Business Communication <br>
+                            - Introduction to Machine Learning <br>
+                            - Basics of Python <br>
+                            <strong>LinkedIn Learning Certificate:</strong> <br>
+                            - Learning Java11
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------------Services----------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">What I Do</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Web Design</h2>
+                
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Data Analysis</h2>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Full Stack Development</h2>
+                
+            </div>
+        </div>
+    
+    </div>
+    
+</div>
+<!-------------------Portfolio------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Finance Web App</h3>
+                    <p>Built a Comprehensive Finance Market
+                        Analysis which integrates News , Various
+                        Visualizations and Prediction System </p>
+                    <a href="projects.html#project1" target="_blank"><i class="fa fa-dollar" aria-hidden="true"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Hospital Management System</h3>
+                    <p>Built a Hospital Management System 
+                        with both front-end and back-end for increased
+                        streamlined Hospital Organization and saving
+                        patient's time.
+                    </p>
+                    <a href="projects.html#project2" target="_blank"><i class="fa fa-hospital-o" aria-hidden="true"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>YouTube Clone Application</h3>
+                    <p>Developed a YouTube clone application using React JS, 
+                        leveraging Material UI 5 components. 
+                        Integrated RapidAPI to access and display YouTube content.</p>
+                    <a href="projects.html#project3" tabindex="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <a href="projects.html" class = "btn" target="_blank">See More</a>
+    </div>
+
+</div>
+<!--------------------Contact---------------->
+<div id="contact">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="contact-left">
+
+                <h1 class="sub-title">Contact Me</h1>
+
+                <p><i class="fa-solid fa-paper-plane"></i>onkarsureshjagtap@gmail.com</p>
+
+                <p><i class="fa-solid fa-phone"></i>+91 7498567609</p>
+
+                <div class="social-icons">
+
+                    <a href="https://www.linkedin.com/in/onkarjagtapxd/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/onkarxo" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:onkarlaptop@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/onkarxd" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+                </div>
+                <a href="https://onkarxo.github.io/MemoryGame/" target="_blank" class = "btn btn2">Feeling Bored?</a>
+                <!--<a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>-->
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name*" required>
+                    <input type="email" name="Email" placeholder="Your Email*" required>
+                    <textarea name="Message"   rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p><i class="fa-solid fa-copyright"></i>Made by Onkar Jagtap</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0" ;
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px" ;
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz01KbVxaQoXWOnTtK-_qb0AweTMAX2Kx5S3G3Nrge7RCm59UPyTvRGBjtRJt66344tmw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset();
+        
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+    </body>
+</html>
