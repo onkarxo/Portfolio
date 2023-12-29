@@ -29,9 +29,9 @@
                 <div class="header-text">
                     <p>Data Science Enthusiast, Web Developer <br>
                         and UI/UX Designer</p>
-                    <h1><span>Welcome Again!</span> <br>
+                    <h1><span>Welcome!</span> <br>
                         Dive Into a Collection <br>of my <span>Creative Projects.</span> </h1>
-                    <a href="images/Onkar_Jagtap_Resume.pdf" download class="btn btn2">Download CV</a>
+                    
                 </div>
             </div>
         </div>
@@ -187,9 +187,11 @@
                 </div>
                 
             </div>
-<div class="copyright">
-    <p><i class="fa-solid fa-copyright"></i>Made by Onkar Jagtap</p>
-</div>  
+        </div>
+        <div class="overlay"></div>
+        <div class="copyright">
+        <p><i class="fa-solid fa-copyright"></i>Made by Onkar Jagtap</p>
+        </div>  
 <script>
     var sidemenu = document.getElementById("sidemenu");
     function openmenu(){
@@ -199,5 +201,42 @@
         sidemenu.style.right="-200px" ;
     }
 </script>
+<script>
+    const screenshots = document.querySelectorAll('.screenshot img');
+    const overlay = document.querySelector('.overlay');
+
+    screenshots.forEach(screenshot => {
+        screenshot.addEventListener('click', () => {
+            if (screenshot.classList.contains('enlarged')) {
+                closeEnlargedImg();
+            } else {
+                screenshots.forEach(img => img.classList.remove('enlarged'));
+                screenshot.classList.add('enlarged');
+                document.body.style.overflow = 'hidden';
+                overlay.style.display = 'block';
+            }
+        });
+    });
+
+    // Function to close the enlarged image
+    function closeEnlargedImg() {
+        const enlargedImg = document.querySelector('.enlarged');
+        if (enlargedImg) {
+            enlargedImg.classList.remove('enlarged');
+            document.body.style.overflow = 'visible';
+            overlay.style.display = 'none';
+        }
+    }
+
+    // Event listener to close the enlarged image when clicking outside the image
+    document.addEventListener('click', function(event) {
+        const enlargedImg = document.querySelector('.enlarged');
+        if (event.target !== enlargedImg && !enlargedImg.contains(event.target)) {
+            closeEnlargedImg();
+        }
+    });
+</script>
+
+
 </body>
 </html>
