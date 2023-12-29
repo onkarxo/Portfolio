@@ -7,43 +7,50 @@
         <title>Onkar's Portfolio</title>
         <link rel="stylesheet" href = "style.css"> 
         <script src="https://kit.fontawesome.com/51a404e344.js" crossorigin="anonymous"></script>
+        <!-- Include AOS library -->
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     </head>
     <body>
-        <div id="header">
+        <div class = "home" id="header" >
             <div class="container">
-                <nav>
+                <nav class="sticky" >
                     <a href="#header">
-                    <img src="images/onkar logo.png" alt="logo" class="logo">
+                    <img src="images/onkar logo.png" alt="logo" class="logo" data-aos="fade-up">
                     </a>    
-                    <ul id = "sidemenu">
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">What I Do</a></li>
-                        <li><a href="projects.html" target="_blank">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                    <ul id = "sidemenu" data-aos="fade-up">
+                        <li><a href="#header">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#services">WHAT I DO</a></li>
+                        <li><a href="#portfolio" >PROJECTS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
                         <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                     </ul>
                     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                 </nav>
-                <div class="header-text">
+                
+                <div class="header-text" data-aos="fade-up">
                     <p>Data Science Enthusiast, Web Developer <br>
                         and UI/UX Designer</p>
                     <h1> Hi, I'm <span>Onkar Jagtap</span> <br>
                          Welcome To 
                         My Portfolio </h1>
-                    <a href="images/Onkar_Jagtap_Resume.pdf" download class="btn btn2">Download CV</a>
+                    <a href="images/Onkar_Jagtap_Resume.pdf" download class="btn btn2 " data-aos="fade-up">Download CV</a>
                 </div>
+                
             </div>
+            
         </div>
+<div class = "content">
 <!-------------------------About------------------------->
-<div id="about">
+<div id="about" >
     <div class="container">
         <div class="row">
-            <div class="about-col-1">
+            <div class="about-col-1 " data-aos="fade-up">
                 <img src="images/onkar-user.jpg" >
             </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
+            <div class="about-col-2 "data-aos="fade-up" >
+                <h1 class="sub-title">ABOUT ME</h1>
                 <p class = "para">
                     I have a profound interest in the multifaceted domains of data science,
                     front-end development, 
@@ -61,7 +68,7 @@
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                   
-                    <ul class="ds-skills-list">
+                    <ul class="ds-skills-list" data-aos="fade-up">
                         <li>Machine Learning</li>
                         <li>Node.js</li>
                         <li>C++</li>
@@ -81,8 +88,8 @@
                         <li>Natural Language Processing</li>
                       </ul>
                 </div>
-                <div class="tab-contents" id = "education">
-                    <ul class="education-list">
+                <div class="tab-contents" id = "education" >
+                    <ul class="education-list" >
                         <li><span>2021-2024</span><br>Pursuing B.Tech. in Artificial 
                             Intelligence and Data Science
                             <br>Vishwakarma Institute of 
@@ -101,8 +108,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="tab-contents" id = "experience">
-                    <ul class="experience-list">
+                <div class="tab-contents" id = "experience" >
+                    <ul class="experience-list" >
                         <li>
                             
                             <span><strong>PUBLICATION:</strong></span> <br>
@@ -130,10 +137,10 @@
 </div>
 
 <!-----------------------Services----------------->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">What I Do</h1>
-        <div class="services-list">
+<div id="services" >
+    <div class="container" >
+        <h1 class="sub-title" data-aos="fade-up">WHAT I DO</h1>
+        <div class="services-list" data-aos="fade-up">
             <div>
                 <i class="fa-solid fa-crop-simple"></i>
                 <h2>Web Design</h2>
@@ -155,11 +162,11 @@
     
 </div>
 <!-------------------Portfolio------------------>
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Projects</h1>
+<div id="portfolio" >
+    <div class="container" >
+        <h1 class="sub-title" data-aos="fade-up">MY PROJECTS</h1>
 
-        <div class="work-list">
+        <div class="work-list" data-aos="fade-up">
             <div class="work">
                 <img src="images/work-1.png">
                 <div class="layer">
@@ -194,26 +201,26 @@
             </div>
         </div>
         
-        <a href="projects.html" class = "btn" target="_blank">See More</a>
+        <a href="projects.html" class = "btn" target="_blank" data-aos="fade-up">See More</a>
     </div>
 
 </div>
 <!--------------------Contact---------------->
-<div id="contact">
+<div id="contact" >
 
-    <div class="container">
+    <div class="container" >
 
-        <div class="row">
+        <div class="row" data-aos="fade-up">
 
-            <div class="contact-left">
+            <div class="contact-left" data-aos="fade-up">
 
-                <h1 class="sub-title">Contact Me</h1>
+                <h1 class="sub-title" data-aos="fade-up">CONTACT ME</h1>
 
-                <p><i class="fa-solid fa-paper-plane"></i>onkarsureshjagtap@gmail.com</p>
+                <p data-aos="fade-up"><i class="fa-solid fa-paper-plane"></i>onkarsureshjagtap@gmail.com</p>
 
-                <p><i class="fa-solid fa-phone"></i>+91 7498567609</p>
+                <p data-aos="fade-up"><i class="fa-solid fa-phone"></i>+91 7498567609</p>
 
-                <div class="social-icons">
+                <div class="social-icons" data-aos="fade-up">
 
                     <a href="https://www.linkedin.com/in/onkarjagtapxd/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/onkarxo" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -221,16 +228,16 @@
                     <a href="https://www.instagram.com/onkarxd" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 
                 </div>
-                <a href="https://onkarxo.github.io/MemoryGame/" target="_blank" class = "btn btn2">Feeling Bored?</a>
+                <a href="https://onkarxo.github.io/MemoryGame/" target="_blank" class = "btn btn3">Feeling Bored?</a>
                 <!--<a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>-->
             </div>
 
-            <div class="contact-right">
+            <div class="contact-right" data-aos="fade-up">
                 <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name*" required>
                     <input type="email" name="Email" placeholder="Your Email*" required>
                     <textarea name="Message"   rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                    <button type="submit" class="btn btn3">Submit</button>
                 </form>
                 <span id="msg"></span>
             </div>
@@ -242,7 +249,7 @@
         <p><i class="fa-solid fa-copyright"></i>Made by Onkar Jagtap</p>
     </div>
 </div>
-
+</div>
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
@@ -257,6 +264,8 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
+    
+    
 </script>
 <script>
     var sidemenu = document.getElementById("sidemenu");
@@ -287,5 +296,11 @@
     })
   </script>
 
+
+<script>
+  AOS.init({
+    duration: 800,
+  });
+</script>
     </body>
 </html>
