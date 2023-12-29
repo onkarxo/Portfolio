@@ -8,10 +8,17 @@ html{
     scroll-behavior: smooth;
     
 }
+:root{
+    --bg-color: #1f242d ;
+    --second-bg-color: #323946 ;
+
+
+}
 body{
     background: #080808;
     color: #fff;
 }
+
 #header{
     width: 100%;
     height: 100vh;
@@ -19,8 +26,18 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
     
+    
+}
+#content {
+    padding-top: 100px; /* Ensure content starts after the header */
+}
+
+nav.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* Add any additional styles for design */
 }
 /* Styling specific to the project page */
 #project-header {
@@ -34,14 +51,33 @@ body{
 .container{
     padding: 10px 10%;
 }
+
 nav{
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.logo{
+nav.sticky {
+    position: fixed;
+    padding: 10px 30px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #080808;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.649); 
+    z-index: 1000;
+    transition: top 0.3s; /* Optional: Add smooth transition effect */
+}
+.logo {
     width: 140px;
+    transition: box-shadow 0.3s ease;
+    border-radius: 10px; /* Adding transition for smooth effect */
+}
+
+.logo:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.649); 
 }
 nav ul li{
     display: inline-block;
@@ -64,9 +100,13 @@ nav ul li a::after{
     left: 0;
     bottom: -6px;
     transition: 0.5s;
+    
 }
+
 nav ul li a:hover::after{
     width: 100%;
+    
+    
 }
 .header-text{
     margin-top: 20%;
@@ -220,6 +260,7 @@ nav ul li a:hover::after{
 .ds-skills-list li:hover{ 
     background: #ff004f;
     transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.656);
  }
 /*.services-list div a{
     color: #fff;
@@ -231,6 +272,7 @@ nav ul li a:hover::after{
 .services-list div:hover{
     background: #ff004f ;
     transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.656);
 }
 /*--------------------Portfolio----------*/
 #portfolio{
@@ -292,6 +334,7 @@ nav ul li a:hover::after{
 }
 .work:hover .layer{
     height: 100%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.656);
 }
 .btn{
     display: block;
@@ -302,11 +345,11 @@ nav ul li a:hover::after{
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
-    transition: background 0.5s;
+    
 }
 .btn:hover {
     background: #ff004f;
-
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.656);
 }
 /*--------------------Contact---------------------------*/
 .contact-left{
@@ -337,15 +380,29 @@ nav ul li a:hover::after{
 .social-icons a:hover{
     color: #ff004f;
     transform: translateY(-5px);
+    
 }
 .btn.btn2{
     display: inline-block;
     background: #080808;
     color: #fff;
+    padding: 10px 50px;
 
 }
 .btn.btn2:hover{
     background: #ff004f;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.656);
+}
+.btn.btn3{
+    display: inline-block;
+    background: #080808;
+    color: #fff;
+    padding: 10px auto;
+
+}
+.btn.btn3:hover{
+    background: #ff004f;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.656);
 }
 .contact-right form{
     width: 100%;
@@ -376,6 +433,7 @@ form .btn2{
     background: #262626;
     margin-top: 20px;
     font-weight: 300;
+    margin-bottom: 0%;
 }
 /*------------------------Projects--------------------*/
 
@@ -391,6 +449,13 @@ form .btn2{
     margin-top: 10px;
     color: #ff004f;
 }
+.project span {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #b54769;
+}
+
 
 .project p {
     font-size: 20px;
@@ -424,6 +489,8 @@ form .btn2{
 .screenshot img:hover {
     transform: scale(1.1);
     z-index: 99; /* Increase z-index on hover */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.656);
+
 }
 .screenshot img.enlarged {
     position: fixed;
@@ -433,7 +500,7 @@ form .btn2{
     z-index: 9999;
     width: 80%; /* Adjust the width of the enlarged image */
     height: 80%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.656);
     border-radius: 10px;
 }
 .overlay {
@@ -443,9 +510,12 @@ form .btn2{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for desired opacity */
+    background-color: rgba(73, 73, 73, 0.624); /* Adjust the alpha value for desired opacity */
     backdrop-filter: blur(5px); /* Apply the blur effect */
     z-index: 999;
+}
+.fa-solid fa-bars{
+    cursor: pointer;
 }
 /*-------------------css for small screens------------*/
 nav .fa-solid{
@@ -465,6 +535,11 @@ nav .fa-solid{
     .header-text h1 {
         font-size: 30px;
     }*/
+    .btn.btn3 {
+        display: block; /* Change to block to occupy full width */
+        text-align: center; /* Center text */
+        margin: 20px auto; /* Add margin to center the button */
+    }
     .screenshot {
         flex: 0 0 100%; /* Adjust to show three screenshots per row */
         max-width: 100%; /* Adjust to show three screenshots per row */
