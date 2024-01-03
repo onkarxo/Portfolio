@@ -36,7 +36,7 @@ body{
 nav.sticky {
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1;
     /* Add any additional styles for design */
 }
 /* Styling specific to the project page */
@@ -67,7 +67,7 @@ nav.sticky {
     width: 100%;
     background-color: #080808;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.649); 
-    z-index: 1000;
+    z-index: 1;
     transition: top 0.3s; /* Optional: Add smooth transition effect */
 }
 .logo {
