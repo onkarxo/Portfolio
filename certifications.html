@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Onkar's Certifications</title>
+        <link rel="stylesheet" href = "style.css"> 
+        <script src="https://kit.fontawesome.com/51a404e344.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body >
+        <div id = "cert-header">
+            <div class="container" >
+                <nav>
+                    <a href="index.html#header">
+                        <img src="images/onkar logo.png" alt="logo" class="logo">
+                    </a>        
+                    <ul id="sidemenu">
+                        <li><a href="#header">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="certifications.html">CERTIFICATES</a></li>
+                        <li><a href="projects.html" target="_blank">PROJECTS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p class="animation-start">Data Science Enthusiast <br>
+                        and Web Developer</p>
+                    <h1><span>Welcome!</span> <br>
+                        Explore <br> my <span>Certifications.</span> </h1>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container" id = "allprojects"  >
+            
+            <div class="project" id="project2">
+            
+            
+                <div class="scrshots">
+                    <h2>Research Conference </h2>
+                    <div class="scrshot ">
+                        <img src="images/Vishwacon.png" alt="Main Screenshot">
+                    </div>
+            
+            
+                </div>
+            </div>
+            <div class="project" id="project1" >
+                
+                
+                <div class="scrshots" >
+                    <h2>UI/UX Design </h2>
+                    <div class="scrshot ">
+                        <img src="images/coursera.png" alt="Main Screenshot">
+                    </div>
+                    
+                   
+                </div>
+            </div>
+            
+            <div class="project" id="project1">
+            
+            
+                <div class="scrshots">
+                    <h2>Business Communication </h2>
+                    <div class="scrshot ">
+                        <img src="images/Business.png" alt="Main Screenshot">
+                    </div>
+            
+            
+                </div>
+            </div>
+            <div class="project" id="project1">
+            
+            
+                <div class="scrshots">
+                    <h2>Software Engineering </h2>
+                    <div class="scrshot ">
+                        <img src="images/Software.png" alt="Main Screenshot">
+                    </div>
+            
+            
+                </div>
+            </div>
+            <div class="project" id="project1">
+            
+            
+                <div class="scrshots">
+                    <h2>Data Science </h2>
+                    <div class="scrshot ">
+                        <img src="images/DataScience.png" alt="Main Screenshot">
+                    </div>
+            
+            
+                </div>
+            </div>
+            <div class="project" id="project1">
+            
+            
+                <div class="scrshots">
+                    <h2>Machine Learning </h2>
+                    <div class="scrshot ">
+                        <img src="images/ML.png" alt="Main Screenshot">
+                    </div>
+            
+            
+                </div>
+            </div>
+            
+            <div class="project" id="project1">
+            
+            
+                <div class="scrshots">
+                    <div><h2>Python Development</h2></div>
+                    <div class="scrshot ">
+                        <img src="images/Python.png" alt="Main Screenshot">
+                    </div>
+            
+            
+                </div>
+            </div>
+            
+            
+        <div class="overlay"></div>
+        <div class="copyright">
+        <p><i class="fa-solid fa-copyright"></i>Made by Onkar Jagtap</p>
+        </div>  
+        <div id="botpress-web-chat"></div>
+            <!-- Botpress webchat embed code -->
+            <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+            <script src="https://mediafiles.botpress.cloud/d4bc2a20-7267-4964-ad37-c00318ac78c0/webchat/config.js" defer></script>
+            
+    
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0" ;
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px" ;
+    }
+</script>
+<script>
+    const screenshots = document.querySelectorAll('.screenshot img');
+    const overlay = document.querySelector('.overlay');
+
+    screenshots.forEach(screenshot => {
+        screenshot.addEventListener('click', () => {
+            if (screenshot.classList.contains('enlarged')) {
+                closeEnlargedImg();
+            } else {
+                screenshots.forEach(img => img.classList.remove('enlarged'));
+                screenshot.classList.add('enlarged');
+                document.body.style.overflow = 'hidden';
+                overlay.style.display = 'block';
+            }
+        });
+    });
+
+    // Function to close the enlarged image
+    function closeEnlargedImg() {
+        const enlargedImg = document.querySelector('.enlarged');
+        if (enlargedImg) {
+            enlargedImg.classList.remove('enlarged');
+            document.body.style.overflow = 'visible';
+            overlay.style.display = 'none';
+        }
+    }
+    
+    // Event listener to close the enlarged image when clicking outside the image
+    document.addEventListener('click', function(event) {
+        const enlargedImg = document.querySelector('.enlarged');
+        if (event.target !== enlargedImg && !enlargedImg.contains(event.target)) {
+            closeEnlargedImg();
+        }
+    });
+</script>
+
+</body>
+</html>
