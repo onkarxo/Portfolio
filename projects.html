@@ -18,19 +18,19 @@
                         <img src="images/onkar logo.png" alt="logo" class="logo">
                     </a>        
                     <ul id = "sidemenu" >
-                        <li><a href="index.html#header">Home</a></li>
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#services">What I Do</a></li>
-                        <li><a href="#allprojects">Projects</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="index.html#header">HOME</a></li>
+                        <li><a href="index.html#about">ABOUT</a></li>
+                        <li><a href="certifications.html">CERTIFICATES</a></li>
+                        <li><a href="#allprojects">PROJECTS</a></li>
+                        <li><a href="index.html#contact">CONTACT</a></li>
                         <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                     </ul>
                     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                 </nav>
                 <div class="header-text">
-                    <p>Data Science Enthusiast, Web Developer <br>
-                        and UI/UX Designer</p>
-                    <h1><span>Welcome!</span> <br>
+                    <p class="animation-start">Data Science Enthusiast <br>
+                        and Web Developer</p>
+                    <h1><span>Hello!</span> <br>
                         Dive Into Collection <br>of my <span>Creative Projects.</span> </h1>
                     
                 </div>
@@ -40,7 +40,7 @@
             <h1 class="sub-title">MY PROJECTS</h1>
     
             <div class="project" id="project1" >
-                <h2>FINWIZ: A Comprehensive Stock Market Analyser </h2>
+                <h2>FINANCE WIZARD: A Comprehensive Stock Market Analyser </h2>
                 <p>Languages Used: Python, HTML/CSS, JavaScript
                     Framework: Django <br>
                     Built a machine learning modelled website predicting stock prices 
@@ -223,6 +223,11 @@
         <div class="copyright">
         <p><i class="fa-solid fa-copyright"></i>Made by Onkar Jagtap</p>
         </div>  
+        <div id="botpress-web-chat"></div>
+            <!-- Botpress webchat embed code -->
+            <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+            <script src="https://mediafiles.botpress.cloud/d4bc2a20-7267-4964-ad37-c00318ac78c0/webchat/config.js" defer></script>
+            
     
 <script>
     var sidemenu = document.getElementById("sidemenu");
@@ -259,7 +264,7 @@
             overlay.style.display = 'none';
         }
     }
-
+    
     // Event listener to close the enlarged image when clicking outside the image
     document.addEventListener('click', function(event) {
         const enlargedImg = document.querySelector('.enlarged');
@@ -268,9 +273,6 @@
         }
     });
 </script>
-<!-- Botpress webchat embed code -->
-<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-<script src="https://mediafiles.botpress.cloud/d4bc2a20-7267-4964-ad37-c00318ac78c0/webchat/config.js" defer></script>
 
 </body>
 </html>
