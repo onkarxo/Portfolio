@@ -10,52 +10,48 @@
         <!-- Include AOS library -->
         <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
     </head>
     <body>
-        <div class = "home" id="header" >
+        <div id="header">
             <div class="container">
-                <nav class="sticky" >
+                <nav class="sticky">
                     <a href="#header">
-                    <img src="images/onkar logo.png" alt="logo" class="logo" data-aos="fade-up">
+                    <img src="images/onkar logo.png" alt="logo" class="logo">
                     </a>    
-                    <ul id = "sidemenu" data-aos="fade-up">
+                    <ul id = "sidemenu">
                         <li><a href="#header">HOME</a></li>
                         <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#services">WHAT I DO</a></li>
-                        <li><a href="#portfolio" >PROJECTS</a></li>
+                        <li><a href="certifications.html">CERTIFICATES</a></li>
+                        <li><a href="projects.html" target="_blank">PROJECTS</a></li>
                         <li><a href="#contact">CONTACT</a></li>
                         <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                     </ul>
                     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                 </nav>
-                
-                <div class="header-text" data-aos="fade-up">
-                    <p>Data Science Enthusiast and Web Developer <br>
-                    </p>
+                <div class="header-text">
+                    <p>Data Science Enthusiast <br>
+                        and Web Developer</p>
                     <h1> Hi, I'm <span>Onkar Jagtap</span> <br>
                          Welcome To 
                         My Portfolio </h1>
-                    <a href="images/Onkar_Jagtap_Resume.pdf" target="_blank" class="btn btn2" data-aos="fade-up">View CV</a>
-
+                    <a href="https://drive.google.com/file/d/1TSaPxYmw3pIuqxhDdWZfebAG1U8AumNW/view?usp=sharing" target="_blank" class="btn btn2 gradient-btn">View CV</a>
                 </div>
-                
             </div>
-            
         </div>
-<div class = "content">
 <!-------------------------About------------------------->
-<div id="about" >
+<div id="about" data-aos="fade-up">
     <div class="container">
         <div class="row">
-            <div class="about-col-1 " data-aos="fade-up">
+            <div class="about-col-1 " >
                 <img src="images/onkar-user.jpg" >
             </div>
-            <div class="about-col-2 "data-aos="fade-up" >
+            <div class="about-col-2 " >
                 <h1 class="sub-title">ABOUT ME</h1>
                 <p class = "para">
                     I have a profound interest in the multifaceted domains of data science,
-                    Machine Learning, 
-                    and full-stack development. Analyzing data intricacies excites me
+                    front-end development, 
+                    and full-stack engineering. Analyzing data intricacies excites me
                     just as much as crafting intuitive user interfaces and bringing them
                     to life through comprehensive full-stack solutions. 
                     The synergy between these areas fuels my passion for creating 
@@ -84,63 +80,51 @@
                         <li>AWS</li>
                         <li>DBMS</li>
                         <li>Tableau</li>
-                        
+                        <li>API</li>
                         <li>Web App Development</li>
                         <li>Natural Language Processing</li>
                       </ul>
                 </div>
-                <div class="tab-contents" id = "education" >
-                    <ul class="education-list" >
-                        <li><span>2020-2024</span><br>Bachelors of Technology in Artificial 
+                <div class="tab-contents" id = "education">
+                    <ul class="education-list">
+                        <li><span>2021-2024</span><br>Pursuing B.Tech. in Artificial 
                             Intelligence and Data Science
                             <br>Vishwakarma Institute of 
                             Information Technology, Pune
-                            <br>CGPA: 9.43
+                            <br>CGPA: 9.31
                             </li>
                         
-                        <li><span>2018-2020</span><br>
-                            Higher Secondary Education<br>
-                            Rao Junior College of Science, 
+                        <li><span>2018-2020</span><br>Rao Junior College of Science, 
                             Pune <br>
                             HSC: 86.15%
                         </li>
-                        <li><span>2013-18</span><br>
-                            Secondary Education<br>
-                            Sardar Dastur 
+                        <li><span>2013-18</span><br>Sardar Dastur 
                             Hormazdiar Co-ed High 
                             School, Pune <br>
                             SSC: 93.60%
                         </li>
                     </ul>
                 </div>
-                <div class="tab-contents" id = "experience" >
-                    <ul class="experience-list" >
+                <div class="tab-contents" id = "experience">
+                    <ul class="experience-list">
                         <li>
                             
                             <span><strong>PUBLICATION:</strong></span> <br>
                             Published a research paper titled "Leveraging Predictive Analytics for 
-                            Improved Stock Market Investment Strategies" as a Chapter in the Taylor and Francis book at the
-                            6th International Conference on Recent Trends in Engineering and Technology at VIIT, Pune, '23.
-                        </li>
-                        <li>
-                        
-                            <span><strong>EXTRA CURRICULAR</strong></span> <br>
-                            Lead Member | Videography team at Artificial Intelligence Students Association (AiSA)
-                           <br> Spearheaded videography projects for events, creating promotional and documentary content that boosted engagement and
-                            visibility for AiSA activities
-
+                            Improved Stock Market Investment Strategies" in a Scopus indexed journal at the
+                            6th International Conference on Recent Trends in Engineering and Technology at VIIT, Pune.
                         </li>
                         <li>
                             <span><strong>CERTIFICATES</strong></span><br>
                             - Introduction to Data Science <br>
-                           
+                            <strong>Infosys SpringBoard:</strong> <br>
                             - Foundations of UX Design by Google <br>        
                             - Software Engineering and Agile software development <br>
                             - Basics of Business Communication <br>
                             - Introduction to Machine Learning <br>
                             - Basics of Python <br>
-                           
-
+                            <strong>LinkedIn Learning Certificate:</strong> <br>
+                            - Learning Java11
                         </li>
                     </ul>
                 </div>
@@ -150,13 +134,13 @@
 </div>
 
 <!-----------------------Services----------------->
-<div id="services" >
-    <div class="container" >
-        <h1 class="sub-title" data-aos="fade-up">MY INTERESTS</h1>
-        <div class="services-list" data-aos="fade-up">
+<div id="services" data-aos="fade-up">
+    <div class="container">
+        <h1 class="sub-title">WHAT I DO</h1>
+        <div class="services-list">
             <div>
                 <i class="fa-solid fa-crop-simple"></i>
-                <h2>Machine Learning</h2>
+                <h2>Web Design</h2>
                 
             </div>
             <div>
@@ -175,11 +159,11 @@
     
 </div>
 <!-------------------Portfolio------------------>
-<div id="portfolio" >
-    <div class="container" >
-        <h1 class="sub-title" data-aos="fade-up">MY PROJECTS</h1>
+<div id="portfolio" data-aos="fade-up">
+    <div class="container">
+        <h1 class="sub-title">MY PROJECTS</h1>
 
-        <div class="work-list" data-aos="fade-up">
+        <div class="work-list">
             <div class="work">
                 <img src="images/work-1.png">
                 <div class="layer">
@@ -214,26 +198,26 @@
             </div>
         </div>
         
-        <a href="projects.html" class = "btn" target="_blank" data-aos="fade-up">See More</a>
+        <a href="projects.html" class = "btn" target="_blank">See More</a>
     </div>
 
 </div>
 <!--------------------Contact---------------->
-<div id="contact" >
+<div id="contact" data-aos="fade-up">
 
-    <div class="container" >
+    <div class="container">
 
-        <div class="row" data-aos="fade-up">
+        <div class="row">
 
-            <div class="contact-left" data-aos="fade-up">
+            <div class="contact-left">
 
-                <h1 class="sub-title" data-aos="fade-up">CONTACT ME</h1>
+                <h1 class="sub-title">CONTACT ME</h1>
 
-                <p data-aos="fade-up"><i class="fa-solid fa-paper-plane"></i>onkarsureshjagtap@gmail.com</p>
+                <p><i class="fa-solid fa-paper-plane"></i>onkarsureshjagtap@gmail.com</p>
 
-                <p data-aos="fade-up"><i class="fa-solid fa-phone"></i>+91 7498567609</p>
+                <p><i class="fa-solid fa-phone"></i>+91 7498567609</p>
 
-                <div class="social-icons" data-aos="fade-up">
+                <div class="social-icons">
 
                     <a href="https://www.linkedin.com/in/onkarjagtapxd/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/onkarxo" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -241,16 +225,16 @@
                     <a href="https://www.instagram.com/onkarxd" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 
                 </div>
-                <a href="https://onkarxo.github.io/MemoryGame/" target="_blank" class = "btn btn3">Feeling Bored?</a>
+                <a href="https://onkarxo.github.io/MemoryGame/" target="_blank" class = "btn btn2">Feeling Bored?</a>
                 <!--<a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>-->
             </div>
 
-            <div class="contact-right" data-aos="fade-up">
+            <div class="contact-right">
                 <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name*" required>
                     <input type="email" name="Email" placeholder="Your Email*" required>
                     <textarea name="Message"   rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn3">Submit</button>
+                    <button type="submit" class="btn btn2">Submit</button>
                 </form>
                 <span id="msg"></span>
             </div>
@@ -262,7 +246,7 @@
         <p><i class="fa-solid fa-copyright"></i>Made by Onkar Jagtap</p>
     </div>
 </div>
-</div>
+
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
@@ -277,8 +261,6 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
-    
-    
 </script>
 <script>
     var sidemenu = document.getElementById("sidemenu");
@@ -289,6 +271,7 @@
         sidemenu.style.right="-200px" ;
     }
 </script>
+
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbz01KbVxaQoXWOnTtK-_qb0AweTMAX2Kx5S3G3Nrge7RCm59UPyTvRGBjtRJt66344tmw/exec'
     const form = document.forms['submit-to-google-sheet']
@@ -308,9 +291,7 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
-<!-- Botpress webchat embed code -->
-  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-  <script src="https://mediafiles.botpress.cloud/d4bc2a20-7267-4964-ad37-c00318ac78c0/webchat/config.js" defer></script>
+
 
 <script>
   AOS.init({
